@@ -4,9 +4,9 @@ This tool demonstrates the power of UAC bypasses and built-in features of Window
 
 ----
 
-The following image demonstrates using UACME combined with Auto-Elevate to go from a LI user to NT AUTHORITY\SYSTEM on Windows 10 21H1.
+The following image demonstrates using UACME combined with Auto-Elevate to go from a medium-integrity user to NT AUTHORITY\SYSTEM on Windows 10 21H1.
 
-![image](https://user-images.githubusercontent.com/54753063/146287122-aa641d16-d91d-4bdb-ad90-ca9045322701.png)
+![image](https://user-images.githubusercontent.com/54753063/146302796-dc35b3e4-6a04-4296-b6c4-9d3eaabd3e2b.png)
 
 Here is an example of executing Auto-Elevate from an Administrator level to escalate to SYSTEM
 
