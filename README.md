@@ -8,7 +8,7 @@ The following image demonstrates using UACME combined with Auto-Elevate to go fr
 
 ![image](https://user-images.githubusercontent.com/54753063/146399560-1572c819-da69-4a17-89b2-03b830586b00.png)
 
-The following steps are performed by Auto-Elevate to escalation from a high-privileged Administrator account to SYSTEM
+The following steps are performed by Auto-Elevate to escalation from a high-privileged Administrator account to SYSTEM without a UAC bypass
 
 ![image](https://user-images.githubusercontent.com/54753063/146398983-2a5ba807-dc72-4692-bbe2-44795d37df63.png)
 
