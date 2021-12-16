@@ -8,7 +8,7 @@ The following image demonstrates using UACME combined with Auto-Elevate to go fr
 
 ![image](https://user-images.githubusercontent.com/54753063/146302977-d5c7fe2d-2c25-43e7-a09e-d5ef98670913.png)
 
-Here is an example of executing Auto-Elevate from an Administrator level to escalate to SYSTEM
+Here is an example of executing Auto-Elevate from an Administrator level to escalate to SYSTEM without UACME
 
 ![image](https://user-images.githubusercontent.com/54753063/146302621-2b4eaa92-f84c-4b15-b044-d85ebfdb3edb.png)
 
