@@ -35,4 +35,4 @@ The following steps are performed by Auto-Elevate to escalate from a low-privile
 
 ## To-Do
 
-- [ ] Implement a standalone version of method 41 from UACME to automate the process further
+- [ ] Implement a standalone version of method 41 from UACME (or similar) to automate the process further
