@@ -25,3 +25,4 @@ The following steps are performed by Auto-Elevate to escalation from Administrat
 ## To-Do
 
 - [ ] Implement a standalone version of method 41 from UACME to automate the process further
+- [ ] Use direct syscalls with SysWhispers2
