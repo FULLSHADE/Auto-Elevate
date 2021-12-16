@@ -39,6 +39,6 @@ The following steps are performed by Auto-Elevate to escalate from a low-privile
 ## MITRE ATT&CK Mapping
 
 - Token Manipulation: [T1134](https://attack.mitre.org/techniques/T1134/)
-- Access Token Manipulation: Token Impersonation/Theft : [T1134.001](https://attack.mitre.org/techniques/T1134/001/)
-- Access Token Manipulation: Create Process with Token : [T1134.002](https://attack.mitre.org/techniques/T1134/002/)
-- Access Token Manipulation: Make and Impersonate Token : [T1134.003](https://attack.mitre.org/techniques/T1134/003/)
+- Access Token Manipulation: Token Impersonation/Theft: [T1134.001](https://attack.mitre.org/techniques/T1134/001/)
+- Access Token Manipulation: Create Process with Token: [T1134.002](https://attack.mitre.org/techniques/T1134/002/)
+- Access Token Manipulation: Make and Impersonate Token: [T1134.003](https://attack.mitre.org/techniques/T1134/003/)
