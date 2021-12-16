@@ -204,6 +204,7 @@ void CheckCurrentProcess()
 
 	GetTokenInfo(TokenHandle);
 
+	CloseHandle(TokenHandle)
 }
 
 int main(int argc, char* argv[])
