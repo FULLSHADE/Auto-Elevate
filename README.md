@@ -19,6 +19,12 @@ The following steps are performed by Auto-Elevate to escalate from a low-privile
 
 ![image](https://user-images.githubusercontent.com/54753063/146303452-5743a5dc-1239-4df9-8353-91f3fd9bb4a0.png)
   
+### UACME ICMLuaUtil Bypass
+
+1. test
+
+### Auto-Elevate
+
 1.  The winlogon.exe process is located by enumerating the systems running processes with CreateToolhelp32Snapshot, Process32First, and Process32Next
 2.  SeDebugPrivilege is enabled for the current process via a call to AdjustTokenPrivileges, as it's required to open a HANDLE to winlogon.exe
 3.  A handle to the winlogon.exe process is opened by calling OpenProcess, for this call PROCESS\_ALL\_ACCESS is used (however, it's overkill)
