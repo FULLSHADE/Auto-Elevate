@@ -2,8 +2,6 @@
 
 This tool demonstrates the power of UAC bypasses and built-in features of Windows. This utility auto-locates `winlogon.exe`, steals and impersonates it's process TOKEN, and creates a new CMD instance with the stolen token. Combined with UAC bypass method #41 (ICMLuaUtil UAC bypass) from hfiref0x's UACME utility, this utility can auto-eleveate a low integrity user to NT AUTHORITY\SYSTEM using built-in Windows features.
 
-Read the full blog post here: <soon to be link>
-
 ----
 
 The following image demonstrates using UACME combined with Auto-Elevate to go from a LI user to NT AUTHORITY\SYSTEM on Windows 10 21H1.
