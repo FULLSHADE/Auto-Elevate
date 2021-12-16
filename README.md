@@ -10,8 +10,7 @@ The following image demonstrates using UACME combined with Auto-Elevate to go fr
 
 The following steps are performed by Auto-Elevate to escalation from a high-privileged Administrator account to SYSTEM
 
-![image](https://user-images.githubusercontent.com/54753063/146302621-2b4eaa92-f84c-4b15-b044-d85ebfdb3edb.png)
-
+![image](https://user-images.githubusercontent.com/54753063/146398889-9701c7a9-c5b7-4e01-8698-5ba34910da1e.png)
 
 ## Technical Explanation
 
