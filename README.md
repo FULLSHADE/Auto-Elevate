@@ -14,7 +14,7 @@ The following image demonstrates using UACME combined with Auto-Elevate to go fr
 
 The following steps are performed by Auto-Elevate to escalation from Administrator to SYSTEM, combining Auto-Elevate with UACME can automate the user to Admin escalation process:
 
-![image](https://user-images.githubusercontent.com/54753063/146289498-14a8135a-e835-4012-bee7-d93588f129fe.png)
+![image](https://user-images.githubusercontent.com/54753063/146290134-71eda507-d2e6-4fb4-a9e3-39280e5cb49c.png)
   
 1.  The winlogon.exe process is located by enumerating the systems running processes with CreateToolhelp32Snapshot, Process32First, and Process32Next
 2.  SeDebugPrivilege is enabled for the current process via a call to AdjustTokenPrivileges, as it's required to open a HANDLE to winlogon.exe
