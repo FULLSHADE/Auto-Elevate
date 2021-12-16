@@ -1,6 +1,6 @@
 # Auto-Elevate
 
-This tool demonstrates the power of UAC bypasses and built-in features of Windows. This utility auto-locates `winlogon.exe`, steals and impersonates it's process TOKEN, and spawns a new SYSTEM-level process with the stolen token. Combined with UAC bypass method #41 (ICMLuaUtil UAC bypass) from hfiref0x's UACME utility, this utility can auto-elevate a medium integrity user to NT AUTHORITY\SYSTEM using built-in Windows features.
+This tool demonstrates the power of UAC bypasses and built-in features of Windows. This utility auto-locates `winlogon.exe`, steals and impersonates it's process TOKEN, and spawns a new SYSTEM-level process with the stolen token. Combined with UAC bypass method #41 (ICMLuaUtil UAC bypass) from hfiref0x's UACME utility, this utility can auto-elevate a low privileged Administrative account to NT AUTHORITY\SYSTEM using built-in Windows features.
 
 ----
 
