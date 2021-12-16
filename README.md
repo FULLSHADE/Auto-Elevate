@@ -6,7 +6,7 @@ This tool demonstrates the power of UAC bypasses and built-in features of Window
 
 The following image demonstrates using UACME combined with Auto-Elevate to go from a low-privileged Administrator account to NT AUTHORITY\SYSTEM on Windows 10 21H1.
 
-![image](https://user-images.githubusercontent.com/54753063/146302977-d5c7fe2d-2c25-43e7-a09e-d5ef98670913.png)
+![image](https://user-images.githubusercontent.com/54753063/146399560-1572c819-da69-4a17-89b2-03b830586b00.png)
 
 The following steps are performed by Auto-Elevate to escalation from a high-privileged Administrator account to SYSTEM
 
