@@ -16,7 +16,7 @@ The following steps are performed by Auto-Elevate to escalation from a high-priv
 
 The following steps are performed by Auto-Elevate to escalate from a low-privileged Administrator to SYSTEM:
 
-![image](https://user-images.githubusercontent.com/54753063/146303452-5743a5dc-1239-4df9-8353-91f3fd9bb4a0.png)
+![image](https://user-images.githubusercontent.com/54753063/146405024-b190cbd2-1ccb-44f0-83b7-4bbf09edabfd.png)
   
 ### UACME ICMLuaUtil Bypass
 
