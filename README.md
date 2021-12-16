@@ -8,6 +8,11 @@ The following image demonstrates using UACME combined with Auto-Elevate to go fr
 
 ![image](https://user-images.githubusercontent.com/54753063/146287122-aa641d16-d91d-4bdb-ad90-ca9045322701.png)
 
+Here is an example of executing Auto-Elevate from an Administrator level to escalate to SYSTEM
+
+![image](https://user-images.githubusercontent.com/54753063/146302621-2b4eaa92-f84c-4b15-b044-d85ebfdb3edb.png)
+
+
 ## Technical Explanation
 
 The following steps are performed by Auto-Elevate to escalation from Administrator to SYSTEM, combining Auto-Elevate with UACME can automate the user to Admin escalation process:
