@@ -18,10 +18,6 @@ The following steps are performed by Auto-Elevate to escalate from a low-privile
 
 ![image](https://user-images.githubusercontent.com/54753063/146405439-40ecc0ec-d3a0-48bb-b3a4-16de725b174f.png)
   
-### UACME ICMLuaUtil Bypass
-
-1. test
-
 ### Auto-Elevate
 
 1.  The winlogon.exe process is located by enumerating the systems running processes with CreateToolhelp32Snapshot, Process32First, and Process32Next
